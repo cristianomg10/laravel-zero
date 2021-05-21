@@ -15,8 +15,8 @@ class CreteProdutos extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('descricao');
+            $table->string('nome')->nullable();
+            $table->string('descricao')->nullable();
             $table->timestamps();
         });
     }
